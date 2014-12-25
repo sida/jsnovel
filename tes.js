@@ -1,7 +1,6 @@
 var _s = require('./lib/scenario');
 var _debug = require('./lib/debug_util');
 
-g
 // DSL実行
 var command = 
 "BLOCK ('b1','aaa','bbb',cr,cr)\n" +
