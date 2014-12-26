@@ -1,6 +1,8 @@
-aaa
-bbb
-ccc
-abcdefg
+'aaa
+'bbb
+# fdaddd
 
-vvv
+goto ccc
+'abcdefg
+:label1
+'vvv
