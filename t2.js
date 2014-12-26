@@ -54,7 +54,9 @@ var listCommandCheckFunc = [chkcomPrint,chkcomLabel,chkcomGoto,noSupport];
 var origline;
 var compiled = [];
 var labelidx = {};
+// エラー表示用のソースの行数
 var lineNo = 1;
+// コメントや空行をスキップした配列用のインデックス
 var effectiveLineNo = 0;
 
 L1:while (null!=(origline = gm.readLn())){
@@ -65,8 +67,9 @@ L1:while (null!=(origline = gm.readLn())){
 	var r = listCommandCheckFunc[ii](l);
 	if (r==null) {continue;}
 	else if (_my.isString(r)){
+	    // エラー表示
 	    _my.println(r + ' : line number ' + lineNo);
-	    _my.println('> ' + l);
+	    _my.println('> ' + origline);
 	    break L1;
 	}
 	else{
