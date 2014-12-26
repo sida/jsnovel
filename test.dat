@@ -2,7 +2,7 @@
 'bbb
 # fdaddd
 
-goto ccc
+goto label1
 'abcdefg
 :label1
 'vvv
