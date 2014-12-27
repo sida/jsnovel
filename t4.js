@@ -30,13 +30,14 @@ my.println(equalExpress(v,e12));
 my.println(equalExpress(v,e13));
 
 
+// 代入式
 function substitutionExpress(v,str){
     var listExpress = str.split('=');
     var tmpleft = listExpress[0];
     var leftExpress = tmpleft.replace(/\s+/g, "");
     if (/[a-zA-Z]\w*/.test(leftExpress)){
 	var rightExpress = evalExpress(v,listExpress[1]);
-	v[leftExpress] = rightExpress;
+	v.leftExpress = rightExpress;
 	return true;
     }
     else{
@@ -44,7 +45,7 @@ function substitutionExpress(v,str){
     }
 }
 
-
+// 比較式
 function equalExpress(v,str){
     var listExpress = str.split('=');
 
@@ -53,6 +54,7 @@ function equalExpress(v,str){
     return (leftExpress==rightExpress);
 }
 
+// 式の評価
 function evalExpress(v,str){
     var rete = evalEx(v,str);
     if (rete==null){
@@ -61,6 +63,7 @@ function evalExpress(v,str){
     return rete;    
 }
 
+// 式の評価　本体
 function evalEx(v,str){
     var rete = regExpress.exec(str);
     if (rete==null){return null;}
@@ -82,6 +85,7 @@ function evalEx(v,str){
     return null;
 }
 
+// 値だけの式の評価
 function evalVal(v,str){
     if (isNumericString(str)){
 	return parseInt(str,10);
@@ -89,6 +93,7 @@ function evalVal(v,str){
     return v[str];
 }
 
+// 整数値として見れる文字列かどうかの判定
 function isNumericString(str){
     var regn = /[1-9][0-9]*/;
     return regn.test(str);

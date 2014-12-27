@@ -2,7 +2,23 @@
 'bbb
 # fdaddd
 
-goto label1
-'abcdefg
+let a=10
+let a=a+11
+
+'ccc
+
+if a=20 goto label20
+if a=21 goto label21
+  'no equl
+  :label20
+  'now label20
+  goto ex1
+:label21
+  'now label21
+
+:ex1
+'ddd
 :label1
+let b=5
 'vvv
+
