@@ -4,16 +4,16 @@ javascriptのノベルゲームエンジンのようなもの試作中。
 nodejs使うよ。
 
 # ファイル
-.
-├── README.md
-├── lib
-│   ├── compile.js
-│   ├── engine.js
-│   ├── filereader.js
-│   └── my_util.js
-├── test.dat
-├── test_compile.js
-└── test_exec.js
+.  
+├── README.md  
+├── lib  
+│   ├── compile.js  
+│   ├── engine.js  
+│   ├── filereader.js  
+│   └── my_util.js  
+├── test.dat  
+├── test_compile.js  
+└── test_exec.js  
 
 
 compile.js : コードを読んで中間言語のようなオブジェクトに変換  
