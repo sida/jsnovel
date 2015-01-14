@@ -51,11 +51,11 @@ a+b+1=10
 a+b=c+d+e  
   
 ## ステートメント  
-|ステートメント|機能|
-|'{string}|あとに続く{string}を表示|
-|:{labelname}|{labelname}というラベルを定義|
-|#|#から行末までコメント|
-|goto {labelname}|ラベル{labelname}へ処理を移動|
-|let {代入式}|代入。値は２つと演算子１つまで　ex. a=a+10|
-|if {条件式} then {代入式}|条件式 ex. a+1=b+3|
-|if {条件式} goto {labelname}|条件式を満たしたら{labelname}へ移動|
+| ステートメント | 機能 |  
+| '{string} |あとに続く{string}を表示 |  
+| :{labelname} |{labelname}というラベルを定義 |  
+| #| #から行末までコメント |  
+| goto {labelname} | ラベル{labelname}へ処理を移動 |  
+| let {代入式} | 代入。値は２つと演算子１つまで　ex. a=a+10 |  
+| if {条件式} then {代入式} | 条件式 ex. a+1=b+3 |  
+| if {条件式} goto {labelname} | 条件式を満たしたら{labelname}へ移動 |  
